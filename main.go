@@ -19,6 +19,7 @@ func main() {
 }
 
 func run() error {
+	// env is a common env file with the variable OMDb_KEY = "your_key"
 	err := godotenv.Load(".env") // using godotenv to use an file .env to envrironment variables
 	if err != nil {
 		slog.Error("failed to read env", "error", err)
